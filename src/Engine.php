@@ -25,5 +25,5 @@ function StartGame(string $gameName)
             return;
         }
     }
-    line("Congratulations!!!!, $name");
+    line("Congratulations, $name!");
 }

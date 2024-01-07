@@ -7,7 +7,7 @@ use function cli\prompt;
 
 function StartGame(string $gameName)
 {
-    line("Welcome to the Brain Games! \n");
+    line("Welcome to the Brain Games!");
     $name = prompt("May I have your name?");
     line("Hello $name");
     $correctAnswersCount = 0;
@@ -17,11 +17,11 @@ function StartGame(string $gameName)
         [$userAnswer, $correctAnswer] = eval('return BrainGames\Cli\brain_' . $gameName . '();');
 
         if ($userAnswer == $correctAnswer) {
-            \cli\line("Correct!\n");
+            \cli\line("Correct!");
             $correctAnswersCount++;
         } else {
-            \cli\line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.\n");
-            \cli\line("Let's try again, $name!\n");
+            \cli\line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
+            \cli\line("Let's try again, $name!");
             return;
         }
     }

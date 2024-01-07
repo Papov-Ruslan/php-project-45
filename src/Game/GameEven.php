@@ -18,7 +18,7 @@ function brain_GameEven()
     $number = random_int(1, 100);
     $correctAnswer = isEven($number) ? 'yes' : 'no';
 
-    \cli\line("Question: $number\n");
+    \cli\line("Question: $number");
     $userAnswer = \cli\prompt("Your answer: ");
     return [$userAnswer, $correctAnswer];
 }

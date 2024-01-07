@@ -6,14 +6,29 @@
   },
   "license": "MIT",
   "bin": [
-    "bin/brain-games"
+    "bin/brain-games",
+    "bin/brain-even",
+    "bin/brain-calc",
+    "bin/brain-gcd",
+    "bin/brain-progression",
+    "bin/brain-prime"
+
   ],
   "require-dev": {
     "squizlabs/php_codesniffer": "*"
   },
   "autoload": {
     "files": [
-      "src/Cli.php"
+      "src/Cli.php",
+      "src/Game/GameEven.php",
+      "src/Game/GameCalc.php",
+      "src/Engine.php",
+      "src/Game/GameGcd.php",
+      "src/Game/GameProgression.php",
+      "src/Game/GamePrime.php"
     ]
+
   }
 }
+
+

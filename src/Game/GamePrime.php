@@ -16,7 +16,7 @@ function brain_GamePrime()
     return [$userAnswer, $correctAnswer];
 }
 
-function IsPrime($n)
+function IsPrime(int $n)
 {
     for ($x = 2; $x < $n; $x++) {
         if ($n % $x == 0) {

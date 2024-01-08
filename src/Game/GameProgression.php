@@ -13,6 +13,8 @@ function brain_GameProgression()
     $numLength = random_int(6, 12);
     $numHidePosition = random_int(2, $numLength - 1);
     $progression = "";
+    $correctAnswer = "";
+
     for ($i = 0; $i < $numLength; $i++) {
         if ($i != $numHidePosition) {
             $progression .= $numStart . " ";

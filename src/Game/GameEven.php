@@ -4,7 +4,7 @@ namespace BrainGames\Cli;
 
 use BrainGames\Cli;
 
-function isEven($number)
+function isEven(int $number)
 {
     return $number % 2 === 0;
 }

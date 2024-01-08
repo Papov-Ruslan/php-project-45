@@ -11,6 +11,7 @@ function brain_GameCalc()
     $num2 = random_int(1, 100);
     $operands = ["+", "-", "*"];
     $operand = $operands[random_int(0, 2)];
+    echo "What is the result of the expression? \n";
     line("Question: " . $num1 . " " . $operand . " " . $num2);
     $userAnswer = prompt("your answer:");
     $correctAnswer = eval("return $num1 $operand $num2;");

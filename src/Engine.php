@@ -9,7 +9,7 @@ function StartGame(string $gameName)
 {
     line("Welcome to the Brain Games!");
     $name = prompt("May I have your name?");
-    line("Hello $name");
+    line("Hello, $name");
     $correctAnswersCount = 0;
     $roundsCount = 3;
     require_once(__DIR__ . "/../src/Game/" . $gameName . ".php");

@@ -17,7 +17,7 @@ function brain_GameProgression()
         if ($i != $numHidePosition) {
             $progression .= $numStart . " ";
         } else {
-            $progression .= "... ";
+            $progression .= ".. ";
             $correctAnswer = $numStart;
         }
 

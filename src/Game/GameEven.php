@@ -12,7 +12,7 @@ function isEven($number)
 function brain_GameEven()
 {
 
-    \cli\line("Answer 'yes' if the number is even, otherwise answer 'no'.");
+    \cli\line('Answer "yes" if the number is even, otherwise answer "no"".');
 
 
     $number = random_int(1, 100);
